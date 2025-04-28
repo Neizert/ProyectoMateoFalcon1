@@ -1,0 +1,31 @@
+.bi-envelope{
+    color: black;
+   }
+   
+   .contacttf{
+       background-color: antiquewhite;
+   }
+   .contacttf:focus{
+       background-color:  rgb(227, 154, 113);
+   }
+   
+   .buttontf{
+       background-color: antiquewhite;
+   }
+   .buttontf:hover{
+       background-color:  rgb(227, 154, 113);
+   }
+   
+   .animacionaparecer{
+       animation-duration: 2s;
+       animation-name: aparecer;
+   }
+   
+   @keyframes aparecer{
+       0%{
+           opacity: 0;
+       }
+       100%{
+           opacity: 1;
+       }
+   }
