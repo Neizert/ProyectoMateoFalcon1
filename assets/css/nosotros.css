@@ -1,0 +1,130 @@
+#delicia-inicial {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../img/helados-artesanales.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#delicia-inicial h1 {
+    margin: 0;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#delicia-inicial .nosotros {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* Sección con información sobre historia y visión */
+#historia-dulce {
+    margin-top: 8%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#historia-dulce .info {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+
+#logos-sabores {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    flex-wrap: wrap;           
+    gap: 2rem;                
+    margin: 3% 0;             
+    padding: 1rem;  
+}
+  
+#logos-sabores .sabor {     
+    width: auto;              
+    object-fit: contain;
+    height: clamp(55px, 10vw, 120px);
+}
+
+/* Línea divisoria */
+#historia-dulce .info .linea {
+    width: 95%;
+    height: 3px;
+    background-color: brown; 
+    margin: 30px auto; 
+}
+
+/* Títulos de historia y visión */
+#historia-dulce h2, h3 {
+    text-align: center;
+    color: brown;
+    font-size: 24px;
+}
+
+/* Párrafos descriptivos */
+#historia-dulce p {
+    margin: 10px 10px;
+    font-size: 1.2rem;
+}
+
+
+
+@media (min-width: 600px) {
+    #delicia-inicial {
+        padding-left: 80px;
+    }
+
+    #delicia-inicial .nosotros {
+        font-size: 2rem;
+    }
+
+    #historia-dulce .info {
+        display: flex;
+        margin: 40px 20px;
+    }
+
+    #historia-dulce .info .linea {
+        display: none;
+    }
+
+    #historia-dulce p {
+        margin: 10px 10px;
+    }
+
+    #historia-dulce {
+        margin-top: 4%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    #historia-dulce .vertical-line {
+        width: 3px;
+        height: auto;
+        background-color: brown;
+        margin: 0 20px;
+    }
+
+    #historia-dulce .info .historia {
+        width: 40vw;
+        height: auto;
+    }
+
+    #historia-dulce .info .vision {
+        width: 40vw;
+        height: auto;
+    }
+}

@@ -1,0 +1,118 @@
+/* ENCABEZADO CON FONDO DE HELADO */
+#helado-encabezado {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(78, 52, 36, 0.5),
+        rgba(78, 52, 36, 0.5)
+    ), url(../img/helado-fondo.jpg); /* Cambiar imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#helado-encabezado h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fffaf0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#helado-encabezado .comercio {
+    font-size: 2rem;
+    padding: 10px;
+    color: #fffaf0;
+}
+
+#helado-encabezado .comercio p {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SECCIÓN DE FORMAS DE PAGO */
+#sabores-pago {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.carta.personalizada {
+    border: 2px solid #a36c45;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    background-color: #f3e6d0; /* crema */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(120, 80, 50, 0.2);
+    height: 250px;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-mercado {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carta-body {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carta-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6e3b1f;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.carta-texto {
+    font-size: 1rem;
+    color: #4e2e1e;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cartas-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .cartas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .cartas-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

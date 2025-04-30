@@ -1,0 +1,280 @@
+#contacto-header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../img/helados2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto-header h1 {
+    margin: 0;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#contacto-header .contacto {
+    font-size: 2rem;
+    padding: 10px;
+    color: aliceblue;
+}
+
+#contacto-header .contacto p {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contacto-direccion {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../img/ubic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#contacto-direccion h1 {
+    margin: 0;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#contacto-direccion .direccion {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: aliceblue;
+}
+
+#contacto-direccion a.hero2-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+#contacto-direccion a.hero2-link:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+#contacto-info {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../img/correos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 90vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#contacto-info h1 {
+    margin: 0;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#contacto-info .correos {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 10px 1rem;
+    color: aliceblue;
+    box-sizing: border-box;
+    width: 80%;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+}
+
+#contacto-info .correos .contenedor-correo .logo-correo {
+    height: 3rem;
+    width: auto; 
+    margin-right: 1px;
+    filter: drop-shadow(0 0 10px #550000);
+    margin-top: 10px;
+}
+
+#contacto-info .correos .contenedor-correo .logo-hotmail {
+    height: 3rem;
+    width: auto;
+    margin-right: -10px;
+    margin-left: -12px; 
+    filter: drop-shadow(0 0 10px #550000);
+    margin-top: 10px;
+}
+
+#contacto-info .correos .contenedor-correo .logo-wp {
+    height: 3rem;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 3px; 
+    filter: drop-shadow(0 0 10px #550000);
+    margin-top: 10px;
+}
+
+#contacto-info .correos .contenedor-correo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(17px, 2vw, 100px);
+    width: auto;
+    filter: drop-shadow(0 0 8px #550000);
+    margin-top: 10px;
+}
+
+#contacto-legales {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../img/madera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#contacto-legales h1 {
+    margin: 0;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#contacto-legales .legal {
+    font-size: 2rem;
+    padding: 10px;
+    color: aliceblue;
+}
+
+#contacto-legales .legal p {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos generales (sin cambios) */
+.carta.personalizada {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: auto;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.campo {
+    flex: 1;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 5px;
+    resize: vertical;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    #contacto-header {
+        padding-left: 80px;
+    }
+
+    #contacto-header .nosotros {
+        font-size: 3rem;
+    }
+
+    #contacto-direccion {
+        padding-left: 80px;
+    }
+
+    #contacto-direccion .direccion {
+        font-size: 3rem;
+    }
+}
