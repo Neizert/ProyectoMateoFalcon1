@@ -1,130 +1,217 @@
+/* Encabezado con fondo y texto principal */
 #delicia-inicial {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ), url(../img/helados-artesanales.jpg); 
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(../img/helados-artesanales.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    min-height: 40vh;
+    min-height: 50vh;
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
 }
 
 #delicia-inicial h1 {
-    margin: 0;
-    margin-bottom: 20px; 
-    color: aliceblue;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    text-align: center; 
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-#delicia-inicial .nosotros {
-    font-size: 1.5rem;
-    padding: 10px;
-}
-
-/* Sección con información sobre historia y visión */
+/* Sección Historia y Visión */
 #historia-dulce {
-    margin-top: 8%;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
 }
 
 #historia-dulce .info {
-    display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: space-evenly;
-    text-align: justify;
-}
-
-
-#logos-sabores {
     display: flex;
-    justify-content: center;  
-    align-items: center;       
-    flex-wrap: wrap;           
-    gap: 2rem;                
-    margin: 3% 0;             
-    padding: 1rem;  
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  
-#logos-sabores .sabor {     
-    width: auto;              
-    object-fit: contain;
-    height: clamp(55px, 10vw, 120px);
+
+#historia-dulce h2, #historia-dulce h3 {
+    text-align: center;
+    color: brown;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#historia-dulce p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Imágenes de Historia y Visión */
+.imagen-historia img,
+.imagen-vision img {
+    width: 90%; /* Aumenta aún más el tamaño de las imágenes */
+    max-width: 1000px; /* Limita el tamaño máximo para mantener la calidad */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Línea divisoria */
-#historia-dulce .info .linea {
-    width: 95%;
+.linea {
+    width: 100%;
     height: 3px;
-    background-color: brown; 
-    margin: 30px auto; 
+    background-color: brown;
+    margin: 30px 0;
 }
 
-/* Títulos de historia y visión */
-#historia-dulce h2, h3 {
+/* Ingredientes */
+#ingredientes {
+    margin: 5% 3%;
     text-align: center;
+}
+
+#ingredientes h2 {
     color: brown;
-    font-size: 24px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
-/* Párrafos descriptivos */
-#historia-dulce p {
-    margin: 10px 10px;
+.ingredientes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ingrediente {
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingrediente img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ingrediente h3 {
+    margin-top: 15px;
+    color: brown;
+    font-size: 1.5rem;
+}
+
+.ingrediente p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Proceso de elaboración */
+#proceso {
+    margin: 5% 3%;
+    text-align: center;
+}
+
+#proceso h2 {
+    color: brown;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#proceso ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#proceso ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+#proceso ul li::before {
+    content: "🍦";
+    position: absolute;
+    left: 0;
+}
+
+/* Expansión */
+#expansion {
+    margin: 5% 3%;
+    text-align: center;
+}
+
+#expansion h2 {
+    color: brown;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#expansion p {
     font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Imagen decorativa alineada en el centro */
+.imagen-decorativa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 
+.imagen-decorativa img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
 
-@media (min-width: 600px) {
-    #delicia-inicial {
-        padding-left: 80px;
+/* Adaptación Responsive */
+@media (min-width: 768px) {
+    #historia-dulce .info {
+        gap: 20px;
     }
 
-    #delicia-inicial .nosotros {
-        font-size: 2rem;
+    .imagen-historia img,
+    .imagen-vision img {
+        width: 90%; /* Ajusta las imágenes para pantallas pequeñas */
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    #delicia-inicial h1 {
+        font-size: 3rem;
     }
 
     #historia-dulce .info {
         display: flex;
-        margin: 40px 20px;
+        justify-content: space-between;
     }
 
-    #historia-dulce .info .linea {
-        display: none;
-    }
-
-    #historia-dulce p {
-        margin: 10px 10px;
-    }
-
-    #historia-dulce {
-        margin-top: 4%;
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-
-    #historia-dulce .vertical-line {
-        width: 3px;
-        height: auto;
-        background-color: brown;
-        margin: 0 20px;
-    }
-
-    #historia-dulce .info .historia {
-        width: 40vw;
-        height: auto;
-    }
-
-    #historia-dulce .info .vision {
-        width: 40vw;
-        height: auto;
+    .imagen-historia img,
+    .imagen-vision img {
+        width: 80%; /* Aumenta las imágenes a un 80% en pantallas grandes */
     }
 }
