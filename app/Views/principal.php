@@ -199,11 +199,9 @@
     </section>
 
     <!-- SELLOS DE CALIDAD -->
-    <section class="calidad">
-        <span class="badge">Ingredientes naturales</span>
-        <span class="badge">Sin conservantes</span>
-        <span class="badge">Elaboración artesanal</span>
-    </section>
+   <section class="calidad frase-final">
+    <h2>"La felicidad se derrite en cada cucharada."</h2>
+</section>
 
     <!-- Scripts -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

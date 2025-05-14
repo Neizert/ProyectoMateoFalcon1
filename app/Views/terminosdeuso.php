@@ -28,8 +28,8 @@
     <h2>Venta de Productos y Procedimientos</h2>
     <p><strong>Garantías:</strong> Nuestros productos están elaborados con ingredientes de alta calidad y cumplen con los estándares de seguridad alimentaria.</p>
     <p><strong>Soporte Postventa:</strong> Si tenés algún inconveniente con tu pedido, podés contactarnos por email o WhatsApp para resolverlo.</p>
-    <p><strong>Formas de Entrega:</strong> Ofrecemos servicio de entrega en la ciudad y posibilidad de retiro en nuestra tienda.</p>
-    <p><strong>Tiempos:</strong> El tiempo estimado de entrega varía según la demanda, pero generalmente oscila entre 30 y 60 minutos.</p>
+    
+    
   </section>
 
 </main>

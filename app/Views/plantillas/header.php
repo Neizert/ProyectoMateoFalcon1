@@ -35,7 +35,7 @@
    
     
     <nav class="contenedor">
-        <a href="#" class="nav-item">Catalogo</a>
+        <a href="principal#catalogo" class="nav-item">Catalogo</a>
         <a href="comercio" class="nav-item">Comercializacion</a>
         <a href="nosotros" class="nav-item">Nosotros</a>
     </nav>

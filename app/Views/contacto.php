@@ -10,15 +10,14 @@
 <body>
     <section id="contacto-header">
         <div class="contacto">
-            <h1>Contactate con nosotros!</h1>
-            <p>Lunes a Sabados</p>
+            <h1>¡Contactate con nosotros!</h1>
+            <p>Lunes a Sábados</p>
             <p>8:00 - 12:00 / 14:00 - 00:00</p>
         </div>
     </section>
 
     <section id="contacto-info">
         <div class="correos">
-           
             <div class="contenedor-correo">
                 <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXSpkWKngnswpzbrSjbscqSfsTrPLKVHFCpPQGvCjWqPrJfCFlMlRNQHsmvghGhCbMkdF" target="_blank">
                     <img src="assets/img/gmail.png" alt="logo correo" class="logo-correo">
@@ -62,20 +61,19 @@
     </section>
 
     <section id="contacto-direccion">
-        <a href="https://www.google.com/maps/place/Lisandro+Segovia+1932,+Corrientes,+Argentina" class="hero2-link">
-            <div class="direccion">
-                <h1>Dirección</h1>
-                <p>Lisandro Segovia 1932, Corrientes Argentina</p>
-            </div>
-        </a>
+        <div class="direccion">
+            <h1>Dirección</h1>
+            <p>Lisandro Segovia 1932, Corrientes, Argentina</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.2108846263896!2d-58.83073092540209!3d-27.496160217174217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c251a8b9475%3A0x26767b36d734c3e!2sLisandro%20Segovia%201932%2C%20W3400DUL%20Corrientes!5e0!3m2!1ses!2sar!4v1715614158417!5m2!1ses!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
-    <section id="contacto-legales">
-        <div class="legal">
-            <h1>Datos Legales</h1>
-            <p>Razón Legal: SweetFlavor</p>
-            <p>Titular: Falcon Mateo Alejo</p>
-            <p>CUIT: 20-42170285-4</p>
+    <section id="contacto-frase">
+        <div class="frase">
+            <h2>"El sabor que te hace volver. Siempre una cucharada más."</h2>
         </div>
     </section>
 </body>
