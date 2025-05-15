@@ -41,6 +41,25 @@ class Home extends BaseController
         view('plantillas/footer');
     }
 
+     public function sabores(){
+        return view('plantillas/header').
+        view('Views/sabores').
+        view('plantillas/footer');
+    }
+
+     public function bombones(){
+        return view('plantillas/header').
+        view('Views/bombones').
+        view('plantillas/footer');
+    }
+
+
+     public function paletas(){
+        return view('plantillas/header').
+        view('Views/paletas').
+        view('plantillas/footer');
+    }
+
 
 
 }

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Catálogo */
+#catalogo {
+    padding: 40px 20px;
+    background-color: #f6f1eb;
+    text-align: center;
+}
+
+#catalogo h2 {
+    color: #5e3c1a;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Grid de Cards */
+.catalogo-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo de las Cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    color: #5e3c1a;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #8B5E3C;
+    margin-bottom: 15px;
+}
+
+/* Botón de Comprar */
+.btn-compra {
+    background-color: #5e3c1a; /* Marrón oscuro */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-compra:hover {
+    background-color: #4a2d15;
+}

@@ -6,6 +6,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* Evitar que el navbar se superponga al contenido */
+.inicio-heladeria {
+    margin-top: 80px; /* Ajustar según la altura del navbar, por ejemplo 80px */
+}
+
+@media (max-width: 768px) {
+    .inicio-heladeria {
+        margin-top: 100px; /* Un poco más en pantallas pequeñas si el navbar se adapta */
+    }
+}
+
+
+
 html, body {
     height: 100%;
     overflow-x: hidden;
@@ -67,7 +80,7 @@ html, body {
     border-top: 2px solid #d1bfa7;
 }
 
-#catalogo h2 {
+#catalogo h2, .letracont h2{
     color: #8B5E3C;
     margin-bottom: 20px;
     font-size: 2rem;
@@ -99,13 +112,13 @@ html, body {
 }
 
 /* Botón de compra */
-.card .btn-primary {
+.card .btn-primary,.letracont .btn-primary {
     background-color: #8B5E3C;
     border-color: #8B5E3C;
     transition: background-color 0.3s;
 }
 
-.card .btn-primary:hover {
+.card .btn-primary:hover .letracont .btn-primary:hover{
     background-color: #6e4b3a;
     border-color: #6e4b3a;
 }

@@ -1,53 +1,71 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f6f1eb; /* fondo claro cálido */
-}
-
-/* Footer rústico */
+/* Estilos Generales */
 footer {
+    background-color: #8B5E3C; /* Marrón medio */
+    color: #f6e9da;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #8B5E3C; /* marrón medio */
-    box-shadow: 0 5px 8px rgba(60, 42, 20, 0.4); /* sombra suave marrón oscuro */
-    color: #fff8f0;
-    padding: 2vh;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 -3px 8px rgba(60, 42, 20, 0.4);
 }
 
 .footer-content {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 5vw;
-    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
 }
 
-.footer-content p {
-    padding-top: 10px;
+.footer-links {
+    display: flex;
+    gap: 15px;
 }
 
-/* Enlaces */
-a {
-    font-size: 16px;
+.footer-links a {
+    color: #f6e9da;
+    text-decoration: none;
     font-weight: 500;
-    text-decoration: none;
-    color: #f6e9da;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-.footer-content a {
-    color: #f6e9da;
-    margin-left: 20px;
-    text-decoration: none;
+.footer-links a:hover {
+    color: #e9dbc8;
 }
 
-.footer-content a:hover {
-    color: #fff;
+/* Redes Sociales */
+.contenedor-red {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-red {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.logo-red:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-content {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-red {
+        width: 28px;
+        height: 28px;
+    }
 }
