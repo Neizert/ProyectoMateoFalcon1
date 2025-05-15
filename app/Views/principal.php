@@ -15,7 +15,7 @@
     <!-- SECCIÓN PRINCIPAL CON CARRUSEL -->
     <section class="inicio-heladeria">
         <section class="temporada">
-            <h1 class="textito">Nuestros productos</h1>
+            <h1 class="textito">El mejor helado artesanal</h1>
         </section>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">

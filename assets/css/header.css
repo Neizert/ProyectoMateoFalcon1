@@ -1,111 +1,63 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-#titulo {
-    color: #000000;
-    font-size: 2.5em; /* Tamaño más grande */
-    font-weight: bold;
-    text-align: center;
-   
-}
-.bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: #8B5E3C !important;
-}
 
-
-
-/* Ajustes para pantallas medianas */
-@media (max-width: 768px) {
-    #titulo {
-        font-size: 2em; /* Reducido para tablets */
-    }
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 480px) {
-    #titulo {
-        font-size: 1.5em; /* Tamaño más reducido para móviles */
-    }
-}
-.nav-link {
-    color: #000000 !important; /* Beige claro */
-    margin-right: 15px;
-    font-size: 1.1em;
-    opacity: 1 !important;
-    visibility: visible !important; /* Fuerza a que sea visible */
-}
-
-.nav-link:hover {
-    color: #000000 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
 body {
     background-color: #b48750;
 }
 
-/* Navbar Bootstrap */
+/* Navbar */
 #navbar-example2 {
-    background-color: #000000;
+    background-color: #8B5E3C !important;
     padding: 10px 30px;
     box-shadow: 0 5px 8px rgba(85, 56, 30, 0.4);
-    position: relative;
-    width: 100%;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Logo */
-.navbar-brand {
-    color: #000000;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
 .logo-img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
 
-.navbar-brand:hover {
-    color: #e9dbc8;
+/* Título */
+.titulo {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-
-
-/* Navegación */
+/* Nav links */
 .nav-link {
-    color: #000000 !important;
+    color: #ffffff !important;
     margin-right: 15px;
-    font-size: 1.1em; /* Aumentado para mayor visibilidad */
-    opacity: 1 !important; /* Evitar que desaparezcan */
+    font-size: 1.1em;
+    opacity: 1 !important;
 }
 
 .nav-link:hover {
     color: #e9dbc8 !important;
-    opacity: 1 !important; /* Evitar que desaparezcan al hover */
 }
 
 /* Dropdown */
 .dropdown-toggle {
-    background-color: #000000;
+    background-color: transparent;
     border: none;
-    color: #f6f1eb !important;
+    color: #ffffff !important;
     transition: background-color 0.3s ease;
 }
 
 .dropdown-toggle:hover {
-    background-color: #8B5E3C;
+    background-color: #6f4a2f;
 }
 
 .dropdown-menu {
@@ -127,21 +79,14 @@ body {
     #navbar-example2 {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
     }
 
-    .dropdown-toggle {
-        width: 100%;
-        text-align: left;
-    }
-
-    .dropdown-menu {
-        width: 100%;
+    .titulo {
+        font-size: 1.5em;
     }
 
     .nav-link {
-        display: block;
-        padding: 8px;
+        margin-bottom: 10px;
     }
 }
 
@@ -150,7 +95,8 @@ body {
         height: 40px;
     }
 
-    .navbar-brand {
-        font-size: 1.1em;
+    .titulo {
+        font-size: 1.2em;
+        margin-bottom: 5px;
     }
 }

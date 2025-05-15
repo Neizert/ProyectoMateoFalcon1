@@ -215,3 +215,108 @@
         width: 80%; /* Aumenta las imágenes a un 80% en pantallas grandes */
     }
 }
+.imagen-historia img,
+.imagen-vision img {
+    width: 100%;
+    max-width: 500px; /* Aumenta el tamaño máximo */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Contenedores de Historia y Visión */
+.historia, .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .historia, .vision {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .imagen-historia, .imagen-vision {
+        width: 50%;
+    }
+    .historia p, .vision p {
+        width: 50%;
+    }
+}
+
+
+/* Estilo de Historia y Visión similar a Ingredientes */
+/* Estilo de Historia y Visión similar a Ingredientes */
+#historia-vision {
+    margin: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.elemento {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elemento h2 {
+    color: brown;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Línea separadora */
+.elemento h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: brown;
+    margin: 10px auto; /* Espacio entre el título y la línea */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenido p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.contenido img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adaptación Responsive */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .contenido img {
+        width: 100%;
+    }
+}
+.imagen-elaboracion img {
+    width: 100%;
+    max-width: 800px; /* Limita el tamaño máximo para pantallas grandes */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}

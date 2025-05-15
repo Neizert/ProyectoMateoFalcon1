@@ -12,12 +12,14 @@
 <body>
 
 <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-    <a class="navbar-brand" href="principal">
-        <img src="assets/img/logoi.png" alt="Logo" class="logo-img">
-    </a>
-     <a class="navbar-brand" id="titulo" href="principal">
-        SweetFlavor IceCream
-    </a>
+    <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="principal">
+            <img src="assets/img/logoi.png" alt="Logo" class="logo-img">
+        </a>
+        <a class="navbar-brand titulo" href="principal">
+            SweetFlavor
+        </a>
+    </div>
 
     <ul class="nav nav-pills">
         <li class="nav-item">

@@ -94,6 +94,7 @@ textarea {
     padding: 40px 20px;
     background-color: #ffffff;
     text-align: center;
+    background-image: url('../img/fondo-mapa.jpg');
 }
 
 #contacto-direccion h1 {
@@ -143,4 +144,52 @@ textarea {
     .fila {
         flex-direction: column;
     }
+}
+
+/* Trabajá con Nosotros */
+#trabaja-con-nosotros {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#trabaja-con-nosotros h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4a2e1a;
+}
+
+#trabaja-con-nosotros p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#contacto-direccion {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('../img/fondo-mapa.jpg');
+}
+
+/* Recuadro estilo cálido */
+#contacto-direccion .direccion,
+#contacto-info {
+    background-color: #f5e6d0; /* Color beige */
+    border: 2px solid #a87d4a; /* Borde marrón */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dentro del recuadro */
+#contacto-direccion .direccion h1,
+#contacto-info h2 {
+    color: #4a2e1a;
+    margin-bottom: 10px;
+}
+
+#contacto-direccion .direccion p,
+#contacto-info p {
+    color: #4a2e1a;
 }

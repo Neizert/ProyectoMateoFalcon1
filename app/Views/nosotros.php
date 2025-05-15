@@ -15,35 +15,27 @@
     </section>
 
     <!-- Historia y Visión -->
-    <section id="historia-dulce">
-        <div class="info">
-            <div class="historia">
-                <h2>NUESTRA HISTORIA</h2>
-                <p>
-                    SweetFlavor nació del sueño de Mateo, un apasionado por los helados y la magia que pueden transmitir. Desde nuestro primer local en 1970, nos comprometimos a crear sabores únicos, reflejando la tradición italiana y la frescura de los ingredientes artesanales. Con el paso de los años, SweetFlavor creció, expandiéndose por distintos barrios y ciudades, llevando la experiencia única de nuestros helados a más y más personas.
-                </p>
-
-                <div class="imagen-historia">
-                <img src="assets/img/historia.jpg" alt="Nuestra Historia">
-            </div>
-            </div>
-
-            <div class="linea"></div> <!-- Línea divisoria -->
-
-            <div class="vision">
-                <h3>NUESTRA VISIÓN</h3>
-                <p>
-                    Queremos que cada persona viva la experiencia de un helado único, ese sabor especial que lo transporta a la infancia, a una celebración o a un momento inolvidable. En SweetFlavor, no solo vendemos helados, creamos experiencias. Nos enfocamos en ofrecer calidad y autenticidad en cada bocado, manteniendo nuestras raíces y evolucionando constantemente.
-                </p>
-            </div>
-
-            <div class="imagen-vision">
-            <img src="assets/img/vision.jpg" alt="Vision">
+   <section id="historia-vision">
+    <div class="elemento">
+        <h2>NUESTRA HISTORIA</h2>
+        <div class="contenido">
+            <p>
+                SweetFlavor nació del sueño de Mateo, un apasionado por los helados y la magia que pueden transmitir. Desde nuestro primer local en 1970, nos comprometimos a crear sabores únicos, reflejando la tradición italiana y la frescura de los ingredientes artesanales. Con el paso de los años, SweetFlavor creció, expandiéndose por distintos barrios y ciudades, llevando la experiencia única de nuestros helados a más y más personas.
+            </p>
+            <img src="assets/img/historia.jpg" alt="Nuestra Historia">
         </div>
-        </div>
+    </div>
 
-        
-    </section>
+    <div class="elemento">
+        <h2>NUESTRA VISIÓN</h2>
+        <div class="contenido">
+            <p>
+                Queremos que cada persona viva la experiencia de un helado único, ese sabor especial que lo transporta a la infancia, a una celebración o a un momento inolvidable. En SweetFlavor, no solo vendemos helados, creamos experiencias. Nos enfocamos en ofrecer calidad y autenticidad en cada bocado, manteniendo nuestras raíces y evolucionando constantemente.
+            </p>
+            <img src="assets/img/vision.jpg" alt="Nuestra Visión">
+        </div>
+    </div>
+</section>
 
     <!-- Ingredientes Naturales -->
     <section id="ingredientes">
