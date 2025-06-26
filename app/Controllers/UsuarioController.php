@@ -56,15 +56,22 @@ class UsuarioController extends BaseController
     }
 
     public function acceder()
-    {
-        $usuarioModel = new UsuarioModel();
+{
+    $usuarioModel = new UsuarioModel();
 
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+    $email = $this->request->getPost('email');
+    $password = $this->request->getPost('password');
 
-        $usuario = $usuarioModel->where('email', $email)->first();
+    $usuario = $usuarioModel->where('email', $email)->first();
 
-        if ($usuario && password_verify($password, $usuario['password'])) {
+    if ($usuario) {
+        // Verifica si está dado de baja
+        if (!$usuario['activo']) {
+            return redirect()->to('login')->with('mensaje', 'Tu cuenta está inactiva. Contacta con un administrador.');
+        }
+
+        // Verifica la contraseña
+        if (password_verify($password, $usuario['password'])) {
             session()->set([
                 'usuario_id' => $usuario['id'],
                 'nombre'     => $usuario['nombre'],
@@ -72,10 +79,12 @@ class UsuarioController extends BaseController
                 'logueado'   => true
             ]);
             return redirect()->to('principal');
-        } else {
-            return redirect()->to('login')->with('mensaje', 'Credenciales inválidas.');
         }
     }
+
+    return redirect()->to('login')->with('mensaje', 'Credenciales inválidas.');
+}
+
 
     public function logout()
     {
